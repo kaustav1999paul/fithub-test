@@ -48,7 +48,7 @@ jobs:
       - name: Build and push multi-arch image
         uses: docker/build-push-action@v5
         with:
-          context: backend
+          context: .
           push: true
           tags: |
             ghcr.io/kaustav1999paul/fithub-test:latest
